@@ -1,0 +1,28 @@
+﻿/*phân trang*/ 
+.footer {
+    border-top: 2px solid #bbbbbb;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+}
+
+    .footer .paging-record-info {
+        position: absolute;
+        left: 16px;
+    }
+
+    .footer .paging-record-option {
+        position: absolute;
+        right: 16px;
+    }
+
+    .footer .paging-option button {
+        outline: none;
+        cursor: pointer;
+    }
+
+    .footer .paging-option {
+        display: flex;
+    }

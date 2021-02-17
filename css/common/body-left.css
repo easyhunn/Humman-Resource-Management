@@ -1,0 +1,65 @@
+﻿/*thanh menu*/
+.body-left {
+    float: left;
+    width: 250px;
+    height: 100vh;
+}
+    /*logo cukcuk*/
+    .body-left .logo-site {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        .body-left .logo-site .logo-icon {
+            background-image: url('../../content/img/toggle.png');
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            flex: 0 0 24px;
+            margin-left: 16px;
+            margin-right: 10px;
+        }
+
+        .body-left .logo-site .logo-text {
+            background-image: url('../../content/img/cukcuk-logo.png');
+            width: 100%;
+            height: 24px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    /*thanh menu dưới logo*/ 
+    .body-left .nav-content {
+        width: 100%;
+        background-color: aqua;
+    }
+
+        .body-left .nav-content .nav-item {
+            width: 100%;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            cursor: pointer;
+        }
+
+            .body-left .nav-content .nav-item:hover {
+                background-color: #e5e5e5;
+            }
+
+            .body-left .nav-content .nav-item:active {
+                background-color: #019160;
+                font-family: GoogleSans-Medium;
+            }
+
+.nav-item .nav-item-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin: 16px;
+    flex: 0 0 20px;
+}

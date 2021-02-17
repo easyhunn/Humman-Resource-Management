@@ -1,0 +1,44 @@
+﻿body {
+    margin: 0;
+    color: #000000;
+    font-size: 13px;
+    font-family: GoogleSans-Regular;
+}
+@font-face {
+    font-family: 'GoogleSans-Medium';
+    src: url('../content/font/GoogleSans-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-Regular';
+    src: url('../content/font/GoogleSans-Regular.otf') format('opentype');
+}
+
+/*chỉnh sửa thanh cuộn*/
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    border-radius: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #bbbbbb;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #808080;
+}
+//adjust table
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px 16px;
+}
+tr {
+    padding: 0 16px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}

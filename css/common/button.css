@@ -1,0 +1,71 @@
+﻿/*button deafaullt*/
+.btn {
+    background-color: #019160;
+    border-radius: 4px;
+    height: 40px;
+    color: #ffffff;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2FBE8E;
+}
+.btn:active {
+    background-color: #01B075;
+}
+    .btn .btn-icon {
+        margin-left: 16px;
+        margin-right: 8px;
+    }
+    .btn .btn-text {
+        margin-right: 16px;
+    }
+.btn-option {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+}
+
+/*nút số trang*/
+.btn-pagenumber {
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #e9ebee;
+    cursor: pointer !important;
+}
+
+    .btn-pagenumber:hover {
+        background-color: #ffffff;
+    }
+
+.btn-pagenumber.btn-pagenumber-selected, .btn-pagenumber-selected:hover {
+    background-color: #019160;
+    color: #ffffff;
+}
+ /*button > */
+.btn-select-page {
+    opacity: .7;
+    margin: 0 4px;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+}
+
+    .btn-select-page:hover {
+        opacity: 1;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+    }

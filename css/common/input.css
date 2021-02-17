@@ -1,0 +1,17 @@
+﻿.input-search {
+    border: 1px solid #DBDEFF;
+    border-radius: 4px;
+    height: 40px;
+    width: 200px;
+    color: #bbbbbb;
+    padding-left: 40px;
+    padding-right: 8px;
+    background-position: 16px center;
+}
+/*sửa font hint text*/
+.input-search::-webkit-input-placeholder {
+    font-size: 12px;
+}
+.input-search:focus {
+    border: 1px solid #019160;
+}
