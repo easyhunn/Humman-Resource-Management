@@ -26,6 +26,9 @@
 }
 .icon-document-online {
     background-image: url('../../content/icon/document-online.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .icon-employee {
     background-image: url('../../content/icon/dic-employee.png');
@@ -47,6 +50,9 @@
 }
 .icon-avatar-default {
     background-image: url('../../content/icon/avatar-default.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .icon-add {
     background-image: url('../../content/icon/add.png');
@@ -61,7 +67,17 @@
 .icon-date-picker {
     background-image: url('../../content/icon/date-picker.svg');
 }
-.m-icon {
+.icon-default-avatar {
+    background-image: url('../../content/icon/default-avatar.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sm-icon {
     width: 16px;
     height: 16px;
+}
+.m-icon {
+    width: 32px;
+    height: 32px;
 }

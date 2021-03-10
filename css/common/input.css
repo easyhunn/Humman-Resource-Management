@@ -1,17 +1,51 @@
 ﻿.input-search {
-    border: 1px solid #DBDEFF;
-    border-radius: 4px;
-    height: 40px;
-    width: 200px;
-    color: #bbbbbb;
-    padding-left: 40px;
-    padding-right: 8px;
-    background-position: 16px center;
+  border: 1px solid #dbdeff;
+  border-radius: 4px;
+  height: 40px;
+  width: 200px;
+  color: #bbbbbb;
+  padding-left: 40px;
+  padding-right: 8px;
+  background-position: 16px center;
 }
 /*sửa font hint text*/
 .input-search::-webkit-input-placeholder {
-    font-size: 12px;
+  font-size: 12px;
 }
 .input-search:focus {
-    border: 1px solid #019160;
+  border: 1px solid #019160;
+}
+
+/*nhóm các khu vực chưa input box*/
+.group-input-area {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/*khu vực chưa các input box*/
+.group-input-area .input-area {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 12px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  height: 52px;
+  padding-bottom: 6px;
+  width: 246px;
+}
+.input-group input {
+  height: 24px;
+  border-radius: 5px;
+  border: 1px solid #d2d2d2;
+  padding: 10px 16px;
+}
+.input-group select {
+  border-radius: 5px;
+  border: 1px solid #d2d2d2;
+  padding: 10px 16px;
 }

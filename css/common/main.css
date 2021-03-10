@@ -29,7 +29,7 @@
 ::-webkit-scrollbar-thumb {
     background: #808080;
 }
-//adjust table
+/*adjust table*/
 table {
     border-collapse: collapse;
 }
@@ -39,6 +39,13 @@ th {
 }
 tr {
     padding: 0 16px;
-    text-align: center;
+    text-align: left;
     border-top: 1px solid #e5e5e5;
+}
+td {
+    overflow: hidden;
+    max-width: 100px;
+    height: 48px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
