@@ -1,6 +1,6 @@
 .body-right {
     width: calc(100% - 252px);
-    height: 100vh;
+    height: calc(100vh - 60px);
     margin-left: 251px;
     border-left: 1px solid #bbbbbb;
 }

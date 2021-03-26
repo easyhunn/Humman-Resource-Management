@@ -8,6 +8,7 @@ class base {
 
     //load Data
     loadData() {
+        
         $.ajax({
             url: this.url,
             method: "GET"
@@ -47,10 +48,28 @@ class base {
                     td.append(dataContent);
                     tr.append(td);
                 })
+                var selectCell = $(`<td>
+                            <div class="group-icon">
+                                <div class="d-icon icon-pencil">
+                                </div>
+                                <div class="d-icon icon-duplicate">
+                                </div>
+                                <div class="d-icon icon-delete"></div>
+                            </div>
+                        </td>`);
+                tr.append(selectCell);
                 $("table tbody").append(tr);
             })
         }).fail(function (err) {
 
         })
+    }
+    InsertCustomer(serializedData) {
+        console.log(serializedData);
+        $.ajax({
+            url: this.url,
+            type: "post",
+            data: serializedData
+        });
     }
 }

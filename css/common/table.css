@@ -1,0 +1,27 @@
+﻿/*adjust table*/
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px 16px;
+}
+
+tr {
+    padding: 0 16px;
+    text-align: left;
+    border-top: 1px solid #e5e5e5;
+}
+
+td {
+    overflow: hidden;
+    max-width: 100px;
+    height: 48px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+    td .group-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

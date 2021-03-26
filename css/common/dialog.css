@@ -3,8 +3,8 @@
 .dialog {
   position: fixed;
   width: 712px;
-  height: 630px;
-  top: calc((100vh - 630px) / 2);
+  height: 650px;
+  top: calc((100vh - 650px) / 2);
   left: calc((100% - 712px) / 2);
   background-color: white;
   border-radius: 6px;

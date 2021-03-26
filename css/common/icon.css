@@ -73,6 +73,17 @@
     background-position: center;
     background-size: cover;
 }
+.icon-pencil {
+    background-image: url('../../content/ImagesIcons/ic_pencil.png');
+}
+
+.icon-duplicate {
+    background-image: url('../../content/ImagesIcons/ic_Duplicate_24.svg');
+}
+
+.icon-delete {
+    background-image: url('../../content/ImagesIcons/ic_Delete_32.svg');
+}
 .sm-icon {
     width: 16px;
     height: 16px;
@@ -80,4 +91,14 @@
 .m-icon {
     width: 32px;
     height: 32px;
+}
+.d-icon {
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.group-icon .d-icon {
+    margin: 3px;
 }

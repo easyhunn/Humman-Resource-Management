@@ -1,6 +1,20 @@
 ﻿$(document).ready(function () {
-  var data = new loadEmployees("http://api.manhnv.net/api/employees");
-  data.loadData();
+    var data = new loadEmployees("https://localhost:44364/api/customer");
+    data.loadData();
+    $("form").submit(function (event) {
+        event.preventDefault();
+        var $form = $(this);
+
+
+        // Serialize the data in the form
+        var serializedData = $form.serializeArray();
+        var indexed_array = {};
+
+        $.map(serializedData, function (n, i) {
+            indexed_array[n['name']] = n['value'];
+        });
+        data.InsertCustomer(indexed_array);
+    })
 });
 
 class loadEmployees extends base {
@@ -17,6 +31,7 @@ class loadEmployees extends base {
     $("#dialog-cancel-btn").click(function () {
       $(".m-dialog").hide();
     });
+
   }
 }
 //load employee data
