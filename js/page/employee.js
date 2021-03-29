@@ -1,6 +1,13 @@
 ﻿$(document).ready(function () {
     var data = new loadEmployees("https://localhost:44364/api/customer");
-    data.loadData();
+    var pr = new Promise(function (res, rej) {
+        data.loadData();
+        
+    })
+    $("#delete").click(function () {
+        alert("??");
+    })
+    //thêm mới 1 customer
     $("form").submit(function (event) {
         event.preventDefault();
         var $form = $(this);
@@ -15,6 +22,7 @@
         });
         data.InsertCustomer(indexed_array);
     })
+    
 });
 
 class loadEmployees extends base {

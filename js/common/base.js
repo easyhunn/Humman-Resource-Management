@@ -1,4 +1,4 @@
-class base {
+﻿class base {
     constructor(url) {
         this.url = url;
         
@@ -16,9 +16,8 @@ class base {
             var data = res;
             
             $.each(data, function (i, item) {
-             //load employees data   
-                var tr = $(`<tr></tr>`);
-               
+                //load employees data   
+                var tr = $(`<tr id=${item.customerId}></tr>`);
                 $.each($("th"), function (index, d) {
                     //load data of each employee
 
@@ -50,12 +49,11 @@ class base {
                 })
                 var selectCell = $(`<td>
                             <div class="group-icon">
-                                <div class="d-icon icon-pencil">
-                                </div>
-                                <div class="d-icon icon-duplicate">
-                                </div>
-                                <div class="d-icon icon-delete"></div>
+                                <button class="d-icon icon-pencil"></button>
+                                <button class="d-icon icon-duplicate"></button>
+                                <button class="d-icon icon-delete" id="delete"></button>
                             </div>
+
                         </td>`);
                 tr.append(selectCell);
                 $("table tbody").append(tr);
@@ -64,12 +62,19 @@ class base {
 
         })
     }
+    //thêm m?i 1 khách hàng
     InsertCustomer(serializedData) {
-        console.log(serializedData);
         $.ajax({
             url: this.url,
             type: "post",
             data: serializedData
         });
+    }
+    //xoá 1 bản ghi
+    DelzeteCustomer(CustomerID) {
+        $.ajax({
+            url: this.url + "?CustomerID=" + CustomerID,
+            type: "delete"
+        })
     }
 }
